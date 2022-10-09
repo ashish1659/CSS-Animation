@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+.container{
+    margin: 5em auto;
+    width: 1110px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+}
+
+.circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction:alternate
+}
+
+.one{
+    background-color: #3D087B;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
